@@ -6,8 +6,8 @@ folders = ['settings', 'mainapp', 'adminapp', 'authapp']
 
 
 def create_Folder(path):
-    if not os.path.exists(fullPath):
-        os.mkdir(fullPath)
+    if not os.path.exists(path):
+        os.mkdir(path)
 
 
 fullPath = os.path.join(path, project_name)
@@ -16,4 +16,3 @@ create_Folder(fullPath)
 for f in folders:
     folder = os.path.join(fullPath, f)
     create_Folder(folder)
-
